@@ -21,8 +21,12 @@ function Home() {
     <div style={{width: '90%', margin: "auto"}} >
       <div className='d-flex justify-content-between aligment-content-center m-4'>
       <h1>Meetings</h1>
+      <div className='d-flex justify-content-between aligment-content-center gap-3 '>
       <Button variant='primary' onClick={() => navigate('/create-meetings')}>
         Create Meeting</Button>
+        <Button variant='success' onClick={() => navigate('/login')}>
+        Login Here</Button>
+      </div>
       </div>
       {
         meeting.map((m) => {
